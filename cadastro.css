@@ -1,0 +1,143 @@
+:root {
+    --cor-linear-gradient: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(200, 145, 22) 100%);
+    --cor-secundaria:linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(44, 10, 236) 100%);;
+    --cor-terciaria: #000;
+    --cor-hover: #fff;
+    --cor-formulario: #f8f9fa;
+    --cor-apagada: #ced4da;
+    --cor-linear:linear-gradient(90deg,rgb(0, 0, 0) 0%,rgb(44, 10, 236)100%);
+    
+    --font-primaria: "Arial, Helvetica", sans-serif;
+    --font-secundaria: "Krona-One", sans-serif;
+  }
+  
+  body {
+    font-family: var(--font-primaria);
+    background-color: var(--cor-formulario);
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  select {
+    width: calc(100%-20px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: var(--cor-formulario);
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -20px;
+    margin-left: -20px;
+    margin-bottom: 10px;
+  }
+  
+  * {
+   
+    box-sizing: border-box;
+  }
+  
+  .navlist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navlist li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .container-fluid {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+  }
+  
+  main.container-fluid {
+    wwidth: calc(100% - 20px); /* Ajusta a largura para evitar a quebra de linha */
+    max-width: 100%;
+    min-height: calc(100vh - 180px); /* Ajusta a altura mínima para o tamanho da janela - cabeçalho - rodapé */
+    overflow-y: auto; /* Adiciona rolagem vertical quando o conteúdo do formulário for maior que a altura mínima */
+  }
+  
+  
+  .float-left {
+    float: left;
+  }
+  
+  .mr-3 {
+    margin-right: 0.75rem;
+  }
+  
+  .mt-4 {
+    margin-top: 1.5rem;
+    
+  }
+  
+  .mt-5,
+  .my-5 {
+    margin-top: 1rem !important;
+  }
+  .input-group>.input-group-append.btn-primary {
+    color: #fff;
+    background-color:(90deg,rgb(0, 0, 0) 0%,rgb(44, 10, 236)100%);
+    border-color:(90deg,rgb(0, 0, 0) 0%,rgb(44, 10, 236)100%);
+  }
+  
+  .h1,
+  h1 {
+    font-size: 2.0rem;
+  }
+  
+  .text-left {
+    text-align: left;
+  }
+  
+  .container-formulario {
+    margin-bottom: 10px; /* Aumenta a margem inferior para evitar a sobreposição com o rodapé */
+  }
+  
+  /* Adicionando regras de mídia para responsividade */
+  @media (max-width: 768px) {
+    .container-formulario {
+      margin-bottom: 0; /* Remove a margem inferior em dispositivos menores */
+    }
+  }
+  
+  
+  .rodape {
+    background-color:(90deg,rgb(0, 0, 0) 0%,rgb(44, 10, 236)100%);
+    border-color: (90deg,rgb(0, 0, 0) 0%,rgb(44, 10, 236)100%);
+    color: var(--cor-hover);
+    text-align: center;
+    padding: 15px;
+    border-bottom: var(--cor-hover);
+    width: 100%;
+    line-height: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999; /* Ajusta o z-index para garantir que o rodapé esteja sempre acima dos elementos */
+  }
+  
+  .rodape p {
+    margin: 0;
+    flex-grow: 1;
+  }
+  /* Adiciona margem superior ao rodapé para evitar sobreposição com os botões */
+  @media (max-width: 768px) {
+    .rodape {
+      margin-top: 60px; /* Ajusta o valor conforme necessário */
+    }
+  }
+  

@@ -1,0 +1,92 @@
+
+
+.apresentacao__receitas__link {
+    display:contents;
+    width: 100px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center:
+  }
+  .receitas-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content:space-around;
+    max-height: 1000px;
+    overflow: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  
+  }
+  .receita {
+    background-color:var(--cor-hover);
+    padding: 5px;
+    width: 300px;
+  }
+  .receita img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    margim-top: 20px;
+  }
+  .receita h2 {
+    color:var(--cor-secundaria);
+  }
+  
+  .receita h3 {
+    color:var(--cor-secundaria);
+  }
+  
+  .receita ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .receita ul li {
+    position: relative;
+    padding-left: 1px;
+  }
+  
+  .receita ul li:before {
+    content: "•";
+    position:relative;
+    left: 0;
+    color: var(--cor-secundaria);
+  }
+  
+  
+  .receita p {
+    color:var(--cor-secundaria);
+  }
+  .rodape {
+    background-color:linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(44, 10, 236) 100%);
+    border-color:linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(44, 10, 236) 100%);
+    color: var(--cor-hover);
+    text-align: center;
+    padding: 15px;
+    border-bottom: var(--cor-hover);
+    width: 100%;
+    line-height: 15px;
+    position: fixed;
+    bottom: 0; /* Fixa o rodapé na parte inferior da tela */
+    left: 0;
+  
+    /* Adiciona flexbox para centralizar o conteúdo verticalmente */
+    display: flex;
+    align-items: center;
+  }
+  
+  .rodape p {
+    margin: 0; /* Remove margens padrão */
+    flex-grow: 1; /* Permite que o texto ocupe o espaço restante */
+  }
+  
+  /* Adicionando regras de mídia para responsividade */
+  @media (max-width: 768px) {
+    main.container-fluid {
+      width: 90%;
+      height: auto;
+    }
+  }
+    
